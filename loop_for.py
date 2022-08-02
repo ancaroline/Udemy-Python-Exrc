@@ -36,3 +36,31 @@ for valor in enumerate(nome):
 qtd = int(input('Quantas vezes esse loop deve rodar? '))
 for n in range(1, qtd+1): # para executar a quantidade desejada, adicionar qtd+1, pois o valor final do range não é contado
     print(f'Imprimindo {n}')
+
+# outro exemplo
+qtd = int(input('Quantas vezes esse loop deve rodar? '))
+soma = 0
+for n in range(1, qtd+1): # para executar a quantidade desejada, adicionar qtd+1, pois o valor final do range não é contado
+    num = int(input(f'Informe o {n}/{qtd} valor: '))
+    soma = soma + num
+print(f'A soma é {soma}')
+
+# Em python existe o /n por default, se não quiser o /n, utilize:
+nome = 'anne carol'
+for letra in nome:
+    print(letra, end='')
+
+# concatenando
+"""
+nome = 'Geek'
+nome + 'University'
+nome * 3 = GeekGeekGeek
+"""
+# Emojis
+# Original: U+1F60D
+# Modificado: U0001F60D
+
+emoji = 'U0001F60D'
+for _ in range(3):
+    for num in range(1, 11):
+        print('\U0001F60D' * num) # A barra é um caracter de scape, pedindo para ignorar
