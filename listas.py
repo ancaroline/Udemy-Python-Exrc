@@ -66,4 +66,22 @@ Extend aceita: string, []
 lista1.extend([123, 44, 67]) # adicionados individualmente, não em formato de lista
 print(lista1)
 
+# Podemos inserir um novo elemento na lista informando a posição do índice
+lista1.insert(2, 'Novo Valor') # isso não substitui o valor
+print(lista1)
 
+# Podemos juntar duas listas
+lista6 = lista1 + lista2
+print(lista6)
+# isto é igual o extend, porém o de cima está criando uma lista nova
+lista4.extend(lista2)
+print(lista4)
+
+# imprimir a lista inversa
+lista1.reverse()
+lista2.reverse()
+print(lista1)
+print(lista2)
+
+# ou pode usar o slice
+print(lista1[::-1])
