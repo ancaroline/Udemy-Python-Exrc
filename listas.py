@@ -213,3 +213,43 @@ print(ex.index(3, 1)) # encontrar o valor 3 a partir do index 1
 # podemos fazer busca dentro do range, inicio/fim
 ex3 = ex.index(4, 0, 3) # busca o numero 8 entre 6 e 8
 print(f'O valor 4 entre os índices 0 e 3 está no index: {ex3}')
+
+# ---------------
+
+# Revisão de slicing
+# lista[início:fim:passo]
+
+# Trabalhando com slice de lista com o parâmetro 'início'
+
+Lista = [1, 2, 3, 4]
+print(Lista[1:]) # Iniciando no índice 1 e pegando todos os elementos restantes
+print(Lista[::]) # Pegar todos os elementos
+print(Lista[-1:])
+
+# Trabalhando com slice de lista com o parâmetro 'fim'
+
+print(Lista[:2]) # Começa em 0, pega até o índice 2-1
+print(Lista[:4])
+print(Lista[1:3])
+
+# Trabalhando com slice de lista com o parâmetro 'passo'
+
+print(Lista[1::2]) # Começa em 1, vai até o final de 2 em 2
+print(Lista[::2]) # Começa em 0, vai até o final de 2 em 2
+print(Lista[1::-1])
+
+# Invertendo valores em uma lista
+Nomes = ['Geek', 'University']
+Nomes[0], Nomes[1] = Nomes[1], Nomes[0]
+print(Nomes)
+# É o mesmo de utilizar o reverse
+Nomes.reverse()
+print(Nomes)
+
+# --- Soma*, Valor Máximo*, Valor Mínimo*, Tamanho
+# * Se os valores forem todos inteiros ou reais
+
+listaExemplos = [1, 2, 3, 4, 5, 6]
+print(sum(listaExemplos)) #soma
+
+
