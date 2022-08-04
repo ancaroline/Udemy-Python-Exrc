@@ -263,4 +263,14 @@ tupla = tuple(listaExemplos)
 print(tupla)
 print(type(tupla))
 
+# -- Desempacotamento de listas
+listaDesempacotamento = [1, 2, 3]
+a1, a2, a3 = listaDesempacotamento
+
+print(a1)
+print(a2)
+print(a3)
+
+# 
+
 
