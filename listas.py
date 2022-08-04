@@ -182,3 +182,16 @@ print(cores[-2]) # azul
 
 # ---
 
+cores1 = ['roxo', 'rosa', 'lilás']
+
+for cor in cores1:
+    print(cor)
+
+indice = 0
+while indice < len(cores1):
+    print(cores1[indice])
+    indice = indice + 1
+
+# Gerar índice em um for
+for indice, cor in enumerate(cores1): # enumerate gera pares: chave e valor, cores1 no índice e o valor em cor
+    print(indice, cor)
