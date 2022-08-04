@@ -250,6 +250,10 @@ print(Nomes)
 # * Se os valores forem todos inteiros ou reais
 
 listaExemplos = [1, 2, 3, 4, 5, 6]
-print(sum(listaExemplos)) #soma
+print(sum(listaExemplos)) # soma
+print(max(listaExemplos)) # máximo valor
+print(min(listaExemplos)) # mínimo valor
+print(len(listaExemplos)) # tamanho da lista
+
 
 
