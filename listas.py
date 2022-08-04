@@ -255,5 +255,12 @@ print(max(listaExemplos)) # máximo valor
 print(min(listaExemplos)) # mínimo valor
 print(len(listaExemplos)) # tamanho da lista
 
+# Transformar uma lista em tupla
+print(listaExemplos)
+print(type(listaExemplos))
+
+tupla = tuple(listaExemplos)
+print(tupla)
+print(type(tupla))
 
 
