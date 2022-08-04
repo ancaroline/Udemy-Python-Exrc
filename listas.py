@@ -157,3 +157,28 @@ while produto != 'sair':
 for produto in carrinho:
     print(produto)
 
+# Utilizando variáveis em listas
+n01 = [1, 2, 3, 4, 5]
+print(n01)
+
+num1 = 1
+num2 = 2
+num3 = 3
+num4 = 4
+num5 = 5
+
+n01 = [num1, num2, num3, num4, num5]
+print(n01)
+
+# Acessar elementos: index
+cores = ['verde', 'azul', 'vermelho']
+print(cores[0]) # verde
+print(cores[1]) # azul
+
+# Acessar elementos: index inverso
+# pense na lista como um círculo, onde o final do elemento está ligado com o início da lista
+print(cores[-1]) # vermelho
+print(cores[-2]) # azul
+
+# ---
+
