@@ -85,3 +85,25 @@ print(lista2)
 
 # ou pode usar o slice
 print(lista1[::-1])
+
+# Copiar uma lista
+lista7 = lista2.copy()
+print(lista7)
+
+# Como saber o tamanho da lista
+print(len(lista1))
+
+# Remover o último elemento de uma lista
+print(lista5)
+lista5.pop() # remove e retorna o elemento
+print(lista5)
+
+# Podemos remover o elemento pelo índice
+# Se não houver o elemento no índice informado, teremos o indexError
+lista5.pop(2)
+print(lista5)
+
+# Podemos remover todos os elementos (zerar a lista)
+print(lista5)
+lista5.clear()
+print(lista5)
