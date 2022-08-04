@@ -132,3 +132,28 @@ lista8 = ['Programação', 'em', 'Python']
 print(lista8)
 curso3 = ' '.join(lista8) # pegue a lista e coloque espaços entre cada elemento e transforme em uma string
 print(curso3)
+
+# Iterando sobre listas
+# Exemplo 1 -- Utilizando For
+
+for elemento in lista1:
+    print(elemento)
+
+soma = ''
+for elemento in lista2:
+    print(elemento)
+    soma = soma + elemento
+print(f'A soma dos elementos é: {soma}')
+
+# Exemplo 2 -- Utilizando While
+carrinho = []
+produto = ''
+
+while produto != 'sair':
+    print("Adicione um produto na lista ou digite 'sair' para sair: ")
+    produto = input()
+    if produto != 'sair':
+        carrinho.append(produto) # append: adiciona um elemento por vez
+for produto in carrinho:
+    print(produto)
+
