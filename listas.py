@@ -195,3 +195,21 @@ while indice < len(cores1):
 # Gerar índice em um for
 for indice, cor in enumerate(cores1): # enumerate gera pares: chave e valor, cores1 no índice e o valor em cor
     print(indice, cor)
+
+# Listas aceitam valores repetidos
+# ---> Outros métodos <---
+# Encontrar o índice de um elemento na lista
+ex = [3, 4, 5, 10, 2, 3]
+
+# Em qual índice está o valor 2?
+ex2 = ex.index(2)
+print(f'O valor está no index: {ex2}')
+print(ex.index(4))
+print(ex.index(3)) # retorna o índice do primeiro elemento encontrado
+
+# podemos fazer busca dentro de um range, qual indice começar a buscar
+print(ex.index(3, 1)) # encontrar o valor 3 a partir do index 1
+
+# podemos fazer busca dentro do range, inicio/fim
+ex3 = ex.index(4, 0, 3) # busca o numero 8 entre 6 e 8
+print(f'O valor 4 entre os índices 0 e 3 está no index: {ex3}')
