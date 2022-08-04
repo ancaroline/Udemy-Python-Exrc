@@ -271,6 +271,30 @@ print(a1)
 print(a2)
 print(a3)
 
-# 
+"""
+# --- MUITO IMPORTANTE ---
+# Copiando uma lista para outra (Shallow Copy e Deep Copy
+Forma 1 ---> lista.copy copia os dados da lista para uma nova lista e ficam independentes: Deep Copy
+(cópia profunda)
+"""
+listaC = [1, 2, 3]
+print(listaC)
 
+listaCopy = listaC.copy()
+print(listaCopy)
+listaCopy.append(4)
+print(listaC)
+print(listaCopy)
+
+"""
+Forma 2 - Shallow Copy --> cópia via atribuição, ambas listas são modificadas
+"""
+print('Shallow Copy')
+listaC = [1, 2, 3]
+print(listaC)
+listaCopy1 = listaC
+print(listaCopy1)
+listaCopy1.append(4)
+print(listaC)
+print(listaCopy1)
 
