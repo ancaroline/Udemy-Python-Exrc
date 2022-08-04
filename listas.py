@@ -107,3 +107,28 @@ print(lista5)
 print(lista5)
 lista5.clear()
 print(lista5)
+
+# Podemos repetir elementos em uma lista
+nova = [1, 2, 3]
+print(nova)
+nova = nova * 3
+print(nova)
+
+# Podemos converter uma string para uma lista
+
+curso = 'Programação em Python'
+print(curso)
+curso = curso.split()
+print(curso)
+# Por padrão, o split separa os elementos pelo espaço entre elas
+# Exemplo 2
+curso1 = 'Programação,em,Python'
+print(curso1)
+curso1 = curso1.split(',')
+print(curso1)
+
+# Transformar lista em string
+lista8 = ['Programação', 'em', 'Python']
+print(lista8)
+curso3 = ' '.join(lista8) # pegue a lista e coloque espaços entre cada elemento e transforme em uma string
+print(curso3)
