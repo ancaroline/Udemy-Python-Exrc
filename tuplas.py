@@ -119,6 +119,13 @@ print(semana[2:]) # a partir de quarta até o final
 - Deixam seu código mais seguro, pois são imutáveis
 """
 
+# Copiando uma tupla para outra
+
+tuplaT = (1, 2, 3)
+print(tuplaT)
+novaTupla = tuplaT # Na tupla não temos o problema de Shallow Copy
+print(novaTupla)
+
 
 
 
