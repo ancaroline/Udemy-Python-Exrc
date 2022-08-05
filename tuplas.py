@@ -33,3 +33,14 @@ print(tupla5)
 """
 Conclusão: Tuplas são definidas pela vírgula e não pelo uso dos ()
 """
+
+tupla = tuple(range(11)) # gerar um range de 1 a 10 e transforme em uma tupla
+print(tupla)
+print(type(tupla))
+
+# Desempacotamento de tupla
+tuplaCurso = ('Geek University', 'Programação em Python: Essencial')
+escola, curso = tuplaCurso
+print(escola)
+print(curso)
+# Gera 'ValueError' se colocarmos um número diferente de elementos para desempacotar
