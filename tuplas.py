@@ -73,3 +73,9 @@ tuplaConcat1 = tuplaConcat2 + tuplaConcat
 tupla = (1, 2, 3)
 print(3 in tupla) # O número 3 está na tupla?
 
+# Iterando sobre uma tupla
+for n in tupla:
+    print(n)
+
+for indice, valor in enumerate(tupla):
+    print(indice, valor)
