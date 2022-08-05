@@ -96,7 +96,28 @@ Exemplo 1
 semana = ('segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado', 'domingo')
 # Não faria sentido adicionar outro dia da semana
 
-# O aces
+# Os acessos a elementos em uma tupla também é como de uma lista
+print(semana[2])
+
+# Iterar com while
+i = 0
+while i < len(semana):
+    print(semana[i])
+    i = i + 1
+
+# Verificamos em qual índice um elemento está na tupla
+print(semana.index('quinta'))
+print(semana.index('quinta', 2)) # verificar a partir do índice 2
+
+# Slicing
+# tupla[inicio:fim:passo]
+print(semana[0:]) # todos
+print(semana[2:]) # a partir de quarta até o final
+
+"""
+- Tuplas são mais rápidas do que lista
+- Deixam seu código mais seguro, pois são imutáveis
+"""
 
 
 
