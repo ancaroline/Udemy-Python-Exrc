@@ -44,3 +44,27 @@ escola, curso = tuplaCurso
 print(escola)
 print(curso)
 # Gera 'ValueError' se colocarmos um número diferente de elementos para desempacotar
+
+# Métodos para adição, remoção de elementos nas tuplas não existem
+# Soma*, Valor Máximo*, Valor mínimo* e tamanho
+# * Se os valores foram todos inteiros ou reais
+
+tuplaSoma = (1, 2, 3)
+print(sum(tuplaSoma))
+print(max(tuplaSoma))
+print(min(tuplaSoma))
+print(len(tuplaSoma))
+
+# Concatenação de tuplas
+tuplaConcat = (1, 2, 3)
+print(tuplaConcat)
+tuplaConcat1 = (4, 3, 5)
+print(tuplaConcat1)
+print(tuplaConcat + tuplaConcat1)
+# Mas as tuplas não foram alteradas
+print(tuplaConcat)
+print(tuplaConcat1)
+
+# São imutáveis, mas podemos sobrescrever seus valores
+tuplaConcat2 = tuplaConcat + tuplaConcat1
+tuplaConcat1 = tuplaConcat2 + tuplaConcat
