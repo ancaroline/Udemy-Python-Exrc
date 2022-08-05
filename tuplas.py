@@ -68,3 +68,8 @@ print(tuplaConcat1)
 # São imutáveis, mas podemos sobrescrever seus valores
 tuplaConcat2 = tuplaConcat + tuplaConcat1
 tuplaConcat1 = tuplaConcat2 + tuplaConcat
+
+# Verificar se determinado elemento está contido na tupla
+tupla = (1, 2, 3)
+print(3 in tupla) # O número 3 está na tupla?
+
