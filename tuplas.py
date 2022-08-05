@@ -79,3 +79,25 @@ for n in tupla:
 
 for indice, valor in enumerate(tupla):
     print(indice, valor)
+
+# Contando elementos em uma tupla
+
+tuplaCont = ('a', 'b', 'c', 'a')
+print(tuplaCont.count('a'))
+
+escola = tuple('Geek')
+print(escola.count('e'))
+
+"""
+Dicas na utilização de tuplas:
+---> Devemos utilizar tuplas SEMPRE que não precisarmos modificar os dados contidos em uma coleção
+Exemplo 1
+"""
+semana = ('segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado', 'domingo')
+# Não faria sentido adicionar outro dia da semana
+
+# O aces
+
+
+
+
