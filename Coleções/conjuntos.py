@@ -25,3 +25,9 @@ print(type(s))
 s = {1, 2, 3, 4, 5}
 print(s)
 print(type(s))
+
+# Podemos verificar se determinado elemento está contido no conjunto
+if 3 in s:
+    print('Tem o 3')
+else:
+    print('Não tem o 3')
