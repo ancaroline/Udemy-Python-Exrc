@@ -83,6 +83,21 @@ Não podemos ter chaves repetidas
 Cuidado para não sobrescrever valores
 """
 
+# Remover dados de um dicionário
+
+# Forma 1 > Mais comum
+receita1 = {'jun': 10, 'jul': 12, 'ago': 30}
+print(receita1)
+ret = receita1.pop('ago') # precisamos sempre informar a chave
+print(ret)
+print(receita1)
+# ao removermos um objeto, o valor desse objeto é sempre retornado
+
+# Forma 2
+# Neste caso, o valor removido não é retornado
+del receita1['jul'] # se a chave não existir, key error
+print(receita1)
+
 
 
 
