@@ -33,6 +33,17 @@ print(paises['br']) # informando a chave
 # Forma 2 -> Forma recomendada -> Acessando via get
 print(paises.get('br'))
 print(paises.get('pt')) # não dará erro, aparecerá "none"
+# Valor padrão para caso não encontrarmos a chave informada
+print(paises.get('ru', 'Não encontrado')) # se não encontrar, coloque esse valor no lugar
+
+# Podemos verificar se determinada chave se encontra
+print('br' in paises) # essa chave se encontra nesse dicionário?
+print('Brasil' in paises) # temos Brasil, mas não como chave e sim como valor
+
+if 'ru' in paises:
+    russia = paises['ru']
+
+
 
 
 

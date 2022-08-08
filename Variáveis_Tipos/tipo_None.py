@@ -7,6 +7,8 @@ falar que é um tipo sem tipo é mais apropriado
 
 --> Utilizado quando queremos criar uma variável e inicializá-la com um tipo sem tipo, antes
 de recebermos um valor final
+
+OBS: SEMPRE é considerado como falso
 """
 
 numeros = None
