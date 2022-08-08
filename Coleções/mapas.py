@@ -26,3 +26,9 @@ for chave in receita.keys():
 print(receita.values())
 for valor in receita.values():
     print(valor)
+
+# Desempacotamento de dicionários
+print(receita.items())
+for chave, valor in receita.items():
+    print(f'chave = {chave} e valor = {valor}')
+
