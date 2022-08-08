@@ -67,7 +67,21 @@ novo_dado = {'mai': 500}
 receita.update(novo_dado) # receita.update({'mai': 500})
 print(receita)
 
+# Atualizando dados em um dicionário
 
+# Forma 1
+receita['mai'] = 550
+print(receita)
+
+# Forma 2
+receita.update({'mai': 600})
+print(receita)
+
+"""
+Conclusão: A forma de adicionar/atualizar é a mesma
+Não podemos ter chaves repetidas
+Cuidado para não sobrescrever valores
+"""
 
 
 
