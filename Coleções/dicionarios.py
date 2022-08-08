@@ -25,6 +25,15 @@ paises = dict(br='Brasil', eua='Estados Unidos')
 print(paises)
 print(type(paises))
 
+# Acessando elementos
+# Forma 1 - Acessando via chave, da mesma forma que lista/tupla
+print(paises['br']) # informando a chave
+# se não tiver a chave, dará o erro keyError
+
+# Forma 2 -> Forma recomendada -> Acessando via get
+print(paises.get('br'))
+print(paises.get('pt')) # não dará erro, aparecerá "none"
+
 
 
 
