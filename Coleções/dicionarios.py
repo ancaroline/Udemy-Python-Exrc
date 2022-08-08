@@ -98,6 +98,47 @@ print(receita1)
 del receita1['jul'] # se a chave não existir, key error
 print(receita1)
 
+"""
+Quando usar dicionários?
 
+- Imagine que você tem um comércio eletrônico, onde temos um carrinho de compras
+Carrinho de compras:
+    produto 1:
+        - nome
+        - quantidade
+        - preço
+    produto 2:
+        - nome
+        - quantidade
+        - preço
+"""
+# 1 Poderíamos utilizar uma lista para isso? Sim
+carrinho = []
+produto1 = ['teclado', 1, 196.50]
+produto2 = ['notebook', 1, 3520.50]
+carrinho.append(produto1)
+carrinho.append(produto2)
+print(carrinho)
+# Teríamos que saber qual é o índice de cada informação no produto
 
+# 2 Poderíamos utilizar uma tupla para isso? Sim
+produto1 = ('bola', 2, 150.0)
+produto2 = ('tucano', 1, 25.0)
+
+carrinho = (produto1, produto2)
+print(carrinho)
+# Teríamos que saber qual é o índice de cada informação no produto
+
+# 3 Poderíamos utilizar um Dicionário para isso? Sim
+carrinho = []
+produto1 = {'nome': 'cubo mágico', 'quantidade': 1, 'preco': 38.90}
+produto2 = {'nome': 'teclado', 'quantidade': 1, 'preco': 258.20}
+carrinho.append(produto1)
+carrinho.append(produto2)
+print(carrinho)
+
+"""
+Desta forma, adicionamos/removemos produtos e em cada produto podemos ter
+a certeza sobre cada informação
+"""
 
