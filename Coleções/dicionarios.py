@@ -142,3 +142,48 @@ Desta forma, adicionamos/removemos produtos e em cada produto podemos ter
 a certeza sobre cada informação
 """
 
+# Métodos de dicionários
+d = dict(a=1, b=2, c=3)
+print(d)
+print(type(d))
+
+# Limpar
+d.clear()
+print(d)
+
+# Copiando um dicionário para outro.
+# Forma 1
+d = dict(a=1, b=2, c=3)
+novo = d.copy() # Deep Copy
+print(novo)
+
+novo['d'] = 4 # cria uma chave "d" e coloque o valor 4 nele
+
+print(d)
+print(novo)
+
+# Forma 2 - Shallow Copy
+novo = d
+print(novo)
+novo['d'] = 4
+print(d)
+print(novo)
+
+# Forma não usual de criação de dicionários
+outro = {}.fromkeys('a', 'b') # criar um dicionário com a chave 'a' e valor 'b'
+
+print(outro)
+print(type(outro))
+
+# Exemplo 2
+usuario = {}.fromkeys(['nome', 'pontos'], 'desconhecido')
+print(usuario) # nome: desconhecido, pontos: desconhecido
+
+# O método fromkeys recebe dois parâmetros: um iterável e um valor.
+# Ele vai gerar para cada valor do iterável uma chave e irá atribuir a esta chave o valor
+
+veja = {}.fromkeys('teste', 'valor') # para cada letra ele criou um valor, pois str é iterável
+print(veja)
+
+veja = {}.fromkeys(range(1, 11), 'novo')
+print(veja)
