@@ -43,6 +43,30 @@ print('Brasil' in paises) # temos Brasil, mas não como chave e sim como valor
 if 'ru' in paises:
     russia = paises['ru']
 
+# Podemos utilizar qualquer tipo de dado, inclusive listas, tuplas, como chaves de dicionarios
+# Tuplas são interessantes de serem utilizados como chaves de dicionários, pois
+# são imutáveis
+localidades = {
+    (35.6565, 45.2323): 'Escritório em Tókio',
+    (84.484, 39.2626): 'Escritório em Orlando',
+}
+print(localidades)
+print(type(localidades))
+
+# Adicionar elementos em um dicionário
+receita = {'jan': 100, 'fev': 120, 'mar': 300}
+print(receita)
+print(type(receita))
+
+# Forma 1 > Mais comum
+receita['abr'] = 350
+print(receita)
+
+# Forma 2
+novo_dado = {'mai': 500}
+receita.update(novo_dado) # receita.update({'mai': 500})
+print(receita)
+
 
 
 
