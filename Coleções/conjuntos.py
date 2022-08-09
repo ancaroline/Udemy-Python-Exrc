@@ -105,3 +105,43 @@ print(s)
 # Podemos remover todos os itens de um conjunto
 s.clear()
 print(s)
+
+"""
+Métodos Matemáticos de Conjuntos
+
+Imagine que temos dois conjuntos:
+1. Estudantes do curso de Python
+2. Estudantes do curso de Java
+"""
+estudantesPython = {'Marcos', 'Samuel', 'Carol', 'Pedro'}
+estudantesJava = {'Ana', 'Gustavo', 'Carol', 'Samuel'}
+"""
+Alguns alunos que estudam Python também estudam Java
+
+Precisamos gerar um conjunto com nomes de estudantes únicos
+"""
+# Forma 1 — Utilizando Union (união entre dois ou mais conjuntos)
+unicos1 = estudantesPython.union(estudantesJava) # mais recomendado
+print(unicos1)
+
+# Forma 2 - Utilizando o caractere pipe |
+unicos2 = estudantesPython | estudantesJava
+print(unicos2)
+
+"""
+> Gerar um conjunto de estudantes que estão em ambos os cursos
+"""
+# Forma 1 - Utilizando intersection
+ambos1 = estudantesPython.intersection(estudantesJava)
+print(ambos1)
+# Forma 2 — Utilizando o &
+ambos2 = estudantesPython & estudantesJava
+print(ambos2)
+
+"""
+> Gerar um conjunto de estudantes que não estão no outro
+"""
+soPython = estudantesPython.difference(estudantesJava)
+print(f'Os alunos {soPython} estão matriculados apenas em Python')
+soJava = estudantesJava.difference(estudantesPython)
+print(f'Os alunos {soJava} estão matriculados apenas em Java')
