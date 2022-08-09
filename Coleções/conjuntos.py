@@ -31,3 +31,26 @@ if 3 in s:
     print('Tem o 3')
 else:
     print('Não tem o 3')
+
+# Importante lembrar que, além de não termos valores duplicados, não temos ordem
+# listas aceitam valores duplicados
+lista = [29, 29, 3, 4, 5]
+print(f'Lista: {lista} com {len(lista)} elementos')
+# Tuplas aceitam valores duplicados
+tupla = (29, 29, 3, 4, 5)
+print(f'Tupla: {tupla} com {len(tupla)} elementos')
+# Dicionários não aceitam chaves duplicadas
+dicionario = {}.fromkeys([29, 29, 3, 4, 5], 'dict')
+print(f'Dicionario: {dicionario} com {len(dicionario)} elementos')
+# Conjuntos não aceitam valores duplicados
+conjunto = {29, 29, 3, 4, 5}
+print(f'Conjuntos: {conjunto} com {len(conjunto)} elementos')
+
+# Podemos colocar tipos de dados misturados em Sets
+s = {1, 'b', True, 34.22}
+print(s)
+print(type(s))
+
+# Podemos iterar em um ‘set’ normalmente
+for valor in s:
+    print(valor)
