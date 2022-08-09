@@ -69,3 +69,20 @@ print(f'{len(cidades)} pessoas visitaram o museu.') # Para saber a quantidade de
 # Agora precisamos saber quantas cidades distintas temos
 # Podemos usar o set para isso:
 print(f'Temos {len(set(cidades))} cidades diferentes')
+
+# Adicionando elementos em um conjunto
+s = {1, 2, 3}
+print(s)
+s.add(4) # os conjuntos são mutáveis
+s.add(4) # duplicidade não gera erro, porém é ignorado
+print(s)
+
+# Remover elementos em um conjunto
+# Forma 1
+s.remove(2) # isto não é índice, é valor, pois conjuntos não são indexados
+print(s) # se não existir o valor, key error
+
+# Forma 2
+s.discard(4)
+print(s) # se não existir o valor, nenhum erro é gerado
+
