@@ -54,3 +54,18 @@ print(type(s))
 # Podemos iterar em um ‘set’ normalmente
 for valor in s:
     print(valor)
+
+"""
+Exemplos de usos com sets
+
+Imagine que fizemos um formulário de cadastro de visitantes em uma feira ou museu
+e os visitantes informam manualmente a cidade de onde vieram.
+Nós adicionamos cada cidade em uma lista Python, já que em uma lista
+podemos adicionar novos elementos e ter repetição
+"""
+cidades = ['São Luís', 'São Paulo', 'São Luís', 'São Bento']
+print(cidades)
+print(f'{len(cidades)} pessoas visitaram o museu.') # Para saber a quantidade de pessoas que vieram
+# Agora precisamos saber quantas cidades distintas temos
+# Podemos usar o set para isso:
+print(f'Temos {len(set(cidades))} cidades diferentes')
