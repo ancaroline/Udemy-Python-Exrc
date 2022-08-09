@@ -86,3 +86,22 @@ print(s) # se não existir o valor, key error
 s.discard(4)
 print(s) # se não existir o valor, nenhum erro é gerado
 
+# Copiando um conjunto para outro
+s = {'a', 'b', 'c'}
+# Forma 1 - Deep Copy // dois objetos independentes
+novo = s.copy()
+print(novo)
+novo. add('d')
+print(novo)
+print(s)
+
+# Forma 2 - Shallow Copy
+s = {'a', 'b', 'c'}
+novo = s
+novo.add(4)
+print(novo)
+print(s)
+
+# Podemos remover todos os itens de um conjunto
+s.clear()
+print(s)
