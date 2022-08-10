@@ -75,3 +75,27 @@ print(num1, num2, num3, num4)
 
 print(outra_funcao())
 print(type(outra_funcao()))
+
+# Vamos criar uma função para jogar a moeda
+
+from random import random  # biblioteca
+
+
+def joga_moeda():
+    # Gera um número pseudo-randômico entre 0 e 1
+    valor = random()
+    if valor > 0.5:
+        return 'Cara'
+    return 'Coroa'
+
+
+print(joga_moeda())
+
+
+# Refatorando a função 'joga_moeda'
+def joga_moeda():
+    # Gera um número pseudo-randômico entre 0 e 1
+    if random() > 0.5:
+        return 'Cara'
+    return 'Coroa'
+
