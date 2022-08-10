@@ -99,3 +99,15 @@ def joga_moeda():
         return 'Cara'
     return 'Coroa'
 
+
+# Erros (codificação desnecessária) comuns na utilização do retorno
+# Exemplo
+def eh_impar():
+    numero = 5
+    if numero % 2 != 0:
+        return True
+    # else: --> else desnecessário, pois só tem duas possibilidades de retorno
+    return False
+
+
+print(eh_impar())
