@@ -145,3 +145,11 @@ soPython = estudantesPython.difference(estudantesJava)
 print(f'Os alunos {soPython} estão matriculados apenas em Python')
 soJava = estudantesJava.difference(estudantesPython)
 print(f'Os alunos {soJava} estão matriculados apenas em Java')
+
+# Soma* , Valor Máximo*, Valor Mínimo*, Tamanho
+# * Se os valores forem todos inteiros e reais
+s = {1, 2, 3, 4, 5, 6}
+print(sum(s))
+print(max(s))
+print(min(s))
+print(len(s))
