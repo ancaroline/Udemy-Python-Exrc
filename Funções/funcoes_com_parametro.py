@@ -63,4 +63,19 @@ print(soma(2, 5))  # argumentos
 print(multiplica(2, 8))
 print(exemplo(3, 2, 'Geek '))
 
+
 # Se a gente informar um número errado de parâmetro ou argumento, teremos TypeError
+
+# Nomeando parâmetros
+def nome_completo(nome, sobrenome):
+    return f'Seu nome completo é {nome} {sobrenome}'
+
+
+print(nome_completo('Caroline', 'Aragão'))
+
+"""
+Diferença entre parâmetros e argumentos
+-> Parâmetros são variáveis declaradas na definição de uma função
+-> Argumentos são dados passados durante a execução da função
+-> A ordem dos parâmetros importa!
+"""
