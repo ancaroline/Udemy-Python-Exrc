@@ -38,3 +38,29 @@ def cantar_parabens(aniversariante):
 
 
 cantar_parabens('Carol')
+
+"""
+Funções podem ter N parâmetros de entrada.
+Ou seja, podemos receber como entrada em uma função quantos parâmetros forem necessários.
+Eles são separados por vírgula.
+"""
+
+
+# Exemplo
+def soma(a, b):  # parâmetros
+    return a + b
+
+
+def multiplica(num1, num2):
+    return num1 * num2
+
+
+def exemplo(num1, b, msg):
+    return (num1 + b) * msg
+
+
+print(soma(2, 5))  # argumentos
+print(multiplica(2, 8))
+print(exemplo(3, 2, 'Geek '))
+
+# Se a gente informar um número errado de parâmetro ou argumento, teremos TypeError
