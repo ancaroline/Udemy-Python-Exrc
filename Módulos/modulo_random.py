@@ -15,6 +15,7 @@ print(random.random())  # nome_do_pacote.nome_da_função
 # Forma 2 — Importando uma função específica do módulo (Forma recomendada)
 
 from random import random
+
 # do módulo random, importe a função random.
 for i in range(10):
     print(random())
@@ -38,3 +39,13 @@ from random import choice
 
 jogadas = ['pedra', 'papel', 'tesoura']
 print(choice(jogadas))
+
+# shuffle() -> tem a função de embaralhar dados
+from random import shuffle
+
+cartas = ['k', 'q', 'j', 'a', '2', '3']
+print(cartas)
+shuffle(cartas)
+print(cartas)
+print(cartas[0])  # dando a carta embaralhada
+print(cartas.pop())  # retirando a última carta embaralhada
