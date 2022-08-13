@@ -32,3 +32,9 @@ from random import randint
 # Gerador de apostas para a mega-sena
 for i in range(6):
     print(randint(1, 61), end=', ')  # começa em 1 e vai até 60
+
+# choice() -> Mostra um valor aleatório entre um iterável
+from random import choice
+
+jogadas = ['pedra', 'papel', 'tesoura']
+print(choice(jogadas))
