@@ -19,4 +19,12 @@ from random import random
 for i in range(10):
     print(random())
 
+# uniform() -> Gerar um número pseudo-aleatório entre os valores estabelecidos
+
+from random import uniform
+
+for i in range(10):
+    print(uniform(3, 7))  # 7 não é incluído
+
+
 
