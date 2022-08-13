@@ -19,12 +19,16 @@ from random import random
 for i in range(10):
     print(random())
 
-# uniform() -> Gerar um número pseudo-aleatório entre os valores estabelecidos
+# uniform() -> Gerar um número real pseudo-aleatório entre os valores estabelecidos
 
 from random import uniform
 
 for i in range(10):
     print(uniform(3, 7))  # 7 não é incluído
 
+# randint() -> Gera valores inteiros pseudo-aleatórios entre os valores estabelecidos
+from random import randint
 
-
+# Gerador de apostas para a mega-sena
+for i in range(6):
+    print(randint(1, 61), end=', ')  # começa em 1 e vai até 60
