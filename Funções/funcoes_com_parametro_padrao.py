@@ -113,6 +113,7 @@ def diz_oi():
 
 print(diz_oi())
 
+
 # OBS: A local terá preferência
 
 
@@ -138,3 +139,22 @@ def incrementa():
 print(incrementa())
 print(incrementa())
 
+
+# Podemos ter funções que são declarodas dentro de funções
+# forma especial de escopo de variável
+
+def fora():
+    contador = 0
+
+    def dentro():
+        nonlocal contador
+        contador = contador + 1
+        return contador
+
+    return dentro()
+
+
+print(fora())
+print(fora())
+
+# não posso chamar a função print(dentro())
