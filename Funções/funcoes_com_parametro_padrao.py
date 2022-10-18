@@ -71,3 +71,30 @@ print(mostra_informacao())
 print(mostra_informacao(instrutor=True))
 print(mostra_informacao('Panda'))
 print(mostra_informacao(nome='Red Holy Panda'))
+
+"""
+Por quê utilizar parâmetros com valor default?
+- Nos permite ser mais flexíveis nas funções;
+- Evita erros com parâmetros incorretos;
+- Nos permite trabalhar com exemplos mais legíveis de código;
+
+Quais tipos de dados podemos utilizar como valores default para parâmetros?
+- Qualquer tipo de dado.
+"""
+
+
+# Exemplos
+def soma(num1, num2):
+    return num1 + num2
+
+
+def mat(num1, num2, fun=soma):
+    return fun(num1, num2)
+
+
+def subtracao(num1, num2):
+    return num1 - num2
+
+
+print(mat(2, 3))
+print(mat(2, 2, subtracao))
