@@ -98,3 +98,43 @@ def subtracao(num1, num2):
 
 print(mat(2, 3))
 print(mat(2, 2, subtracao))
+
+# Escopo — Evitar problemas e confusões
+# Variáveis globais
+# Variáveis locais
+
+instrutor = 'Geek'  # global
+
+
+def diz_oi():
+    instrutor = 'Python'  # local
+    return f'Oi {instrutor}'
+
+
+print(diz_oi())
+
+# OBS: A local terá preferência
+
+
+def diz_oi():
+    prof = 'Geek'
+    return f'Olá {prof}'
+
+
+print(diz_oi())
+# print(prof) # NameError
+
+# ATENÇÃO com variáveis globais (evite)
+total = 0
+
+
+def incrementa():
+    # total = total + 1 > A variável não foi inicializada
+    global total  # Avisando que estaremos usando a global
+    total = total + 1
+    return total
+
+
+print(incrementa())
+print(incrementa())
+
