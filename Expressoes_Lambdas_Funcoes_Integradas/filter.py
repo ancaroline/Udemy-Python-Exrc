@@ -28,3 +28,11 @@ print(f'Países filtrados: {list(res)}')
 # Outras formas utilizando função
 # res = filter(lambda pais: len(pais) > 0, paises
 # res = filter(lambda pais: pais != '', paises)
+
+"""
+A diferença entre MAP e FILTER é: 
+-> map() recebe dois parâmetros, uma função e um iterável e retorna um objeto mapeando
+a função para cada elemento do iterável
+-> filter() recebe dois parâmetros, uma função e um iterável e retorna um objeto filtrando
+apenas os elementos de acordo com a função
+"""
