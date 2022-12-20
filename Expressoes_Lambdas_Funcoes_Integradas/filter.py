@@ -36,3 +36,21 @@ a função para cada elemento do iterável
 -> filter() recebe dois parâmetros, uma função e um iterável e retorna um objeto filtrando
 apenas os elementos de acordo com a função
 """
+# Exemplo mais complexo
+usuarios = [
+    {"username": "samuel", "tweets": ["Eu adoro bolos", "Eu adoro pizzas"]},
+    {"username": "gustavo", "tweets": ["Eu não gosto de bolos"]},
+    {"username": "carla", "tweets": ["Eu adoro gatos"]},
+    {"username": "bob123", "tweets": []},
+    {"username": "ana", "tweets": ["gatos são bons", "Eu adoro bolos", "viva a vida"]},
+]
+print(usuarios)
+# Filtrar os usuários que estão inativos no Twitter
+
+# Forma 1
+inativos = list(filter(lambda usuario: len(usuario['tweets']) == 0, usuarios))
+print(inativos)
+
+# Forma 2
+inativos = list(filter(lambda usuario: not usuario['tweets'], usuarios))
+print(inativos)
