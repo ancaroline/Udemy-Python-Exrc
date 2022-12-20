@@ -20,4 +20,11 @@ print(type(res))  # filter object
 print(list(res))
 print(f'Novamente: {list(res)}')  # assim como o map, após serem utilizados os dados, eles são excluídos da memória.
 
-
+# Remoção de dados faltantes
+paises = ['', 'Brasil', '', '', 'Chile', 'Venezuela']
+print(f'Países com dados faltantes: {paises}')
+res = filter(None, paises)  # none vai fazer com que os dados vazios sejam eliminados
+print(f'Países filtrados: {list(res)}')
+# Outras formas utilizando função
+# res = filter(lambda pais: len(pais) > 0, paises
+# res = filter(lambda pais: pais != '', paises)
