@@ -17,3 +17,13 @@ print(all([letra for letra in 'eio' if letra in 'aeiou']))
 
 print(all([num for num in [4, 2, 10, 6, 8] if num % 2 == 0]))  # true
 print(all([num for num in [4, 2, 10, 6, 8] if num % 2 == 1]))  # daria uma lista vazia, portanto True
+
+"""
+any() -> Retorna True se qualquer elemento do iterável for verdadeiro, se o iterável estiver vazio,
+retorna falso.
+"""
+print(any([0, 1, 2, 3, 4]))  # True
+print(any([0, False, [], {}]))  # False
+nomes = ['Carlos', 'Carol', 'Cassio', 'Ricardo']
+print(any([nome[0] == 'C' for nome in nomes]))  # True
+print(any([num for num in [4, 2, 10, 3] if num % 2 == 0]))  # True
