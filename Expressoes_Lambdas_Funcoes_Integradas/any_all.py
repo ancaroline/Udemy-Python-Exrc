@@ -10,7 +10,7 @@ print(all([]))  # True
 print(all((1, 2, 3)))  # pode ser uma tupla.
 print(all('geek'))  # uma string.
 
-nome = ['Carlos', 'Camila', 'Cassio']  # se houvesse um nome com letra diferente, seria false
+nomes = ['Carlos', 'Camila', 'Cassio']  # se houvesse um nome com letra diferente, seria false
 print(all([nome[0] == 'C' for nome in nomes]))
 # OBS: Um iterável vazio convertido em boolean é False, mas o all() entende como True
 print(all([letra for letra in 'eio' if letra in 'aeiou']))
