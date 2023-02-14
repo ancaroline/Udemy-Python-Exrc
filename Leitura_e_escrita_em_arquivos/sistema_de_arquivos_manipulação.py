@@ -62,7 +62,7 @@ os.rmdir('templates')  # se tiver qualquer conteúdo, teremos: OSError
 # Se o diretório não existir teremos um FileNotFoundError
 
 # Removendo uma árvore de arquivos
-for arquivo in os.scandir('templates4')
+for arquivo in os.scandir('templates4'):
     if arquivo.is_file():
         os.remove(arquivo.path)
 
@@ -77,6 +77,7 @@ o processo para.
 # Trabalhando com arquivos e diretórios temporários
 import os
 import tempfile
+
 """Criamos um dir temporario, abrindo e dentro dele criando um file
 para escrevermos um texto. No final usamos um input só para 
 mantermos os arquivos temporários vivos dentro do bloco with."""
