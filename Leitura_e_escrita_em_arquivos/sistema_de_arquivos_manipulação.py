@@ -14,7 +14,7 @@ print(os.path.exists('frutas.txt'))  # True
 print(os.path.exists('workspace'))
 
 # Path absoluto
-print(os.path.exists('C:\\workspace\\ws-python\\udemy\\Udemy-Python-Exrc\\Coleções'))
+print(os.path.exists('/Udemy-Python-Exrc/Colecoes'))
 
 # Criando e fechando arquivos
 
