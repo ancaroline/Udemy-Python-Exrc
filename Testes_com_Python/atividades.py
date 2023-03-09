@@ -12,3 +12,11 @@ def dormir(num_horas):
         return f'Estou atrasado, acordei tarde.'
     else:
         return f'Continuo cansado por dormir apenas {num_horas} horas.'
+
+
+# Outros tipos de assertions
+def eh_engracada(pessoa):
+    comediantes = ['Jim Carrey', 'Bozo']
+    if pessoa in comediantes:
+        return True
+    return False

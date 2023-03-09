@@ -1,5 +1,5 @@
 import unittest
-from atividades import comer, dormir
+from atividades import comer, dormir, eh_engracada
 
 
 # nomeia a classe com o mesmo nome do módulo que queremos testar
@@ -32,6 +32,16 @@ class AtividadesTestes(unittest.TestCase):
             dormir(10),
             'Estou atrasado, acordei tarde.'
         )
+
+    # Outros tipos de assertions
+    def test_eh_engracada(self):
+        # self.assertEqual(eh_engracada('Inês Silva'), False)  # None != False // função implementada ...
+        self.assertFalse(eh_engracada('Inês Silva'))
+        """espera que o resultado seja False, o teste irá passar, pois entenderá que None seja False:
+                self.assertFalse(eh_engracada('Inês Silva')) 
+                porém, nossa função ainda não foi implementada"""
+        self.assertTrue(
+            eh_engracada('Jim Carrey'), 'Jim Carrey deveria ser engraçado')  # especificando mensagem de erro
 
 
 # se o nome da minha aplicação for igual a main, execute unittest.main
