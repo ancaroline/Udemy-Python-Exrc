@@ -60,4 +60,5 @@ def cumprimentar_v6(nome, /, mensagem1='Olá', *, mensagem2):
 
 print(cumprimentar_v6('João', mensagem2='Seja bem-vindo'))
 print(cumprimentar_v6('João', mensagem1='Hello', mensagem2='Seja bem-vindo'))
-print(cumprimentar_v6('João', mensagem1='Hello', 'Seja bem-vindo'))  # -> Isto dará erro, pois é obrigatório informar o parâmetro
+# print(cumprimentar_v6('João', mensagem1='Hello', 'Seja bem-vindo'))
+# -> Isto dará erro, pois é obrigatório informar o parâmetro
